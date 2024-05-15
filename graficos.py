@@ -36,11 +36,8 @@ sizes = top_animes['Popularity']
 colors = ['gold', 'yellowgreen', 'lightcoral', 'lightskyblue', 'orange']
 explode = (0.0, 0.1, 0.0, 0.0, 0.0)
 
-def autopct_format(pct):
- return f'{pct:.1f}%' if pct > 2 else ''
 
-
-plt.pie(sizes, colors=colors, startangle=90, autopct='%1.1f%%', explode=explode, pctdistance=0.85)
+plt.pie(sizes, colors=colors, startangle=90, autopct='%1.1f%%', explode=explode, pctdistance=0.65)
 plt.axis('equal') 
 plt.legend(labels, loc='lower right')
 plt.title('Maior popularidade do Top 5')
